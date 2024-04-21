@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+</head>
+<body>
+    <h1>Pagina para completar con su perfil</h1>
+    <form>
+        <input type="text" value="ESTUDIANTE" readonly><br><br>
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" placeholder="Ingrese nombre completo"><br><br>
+        <label for="mail">Mail:</label>
+        <input type="email" id="mail" placeholder="Ingrese su mail"><br><br>
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" placeholder="Ingrese su edad"><br><br>
+        <label for="nacionalidad">Nacionalidad:</label>
+        <select id="nacionalidad">
+            <option>Argentina</option>
+            <option>Brasil</option>
+            <option>Uruguay</option>
+        </select><br><br>
+        <label for="laboral">Condicion laboral:</label>
+        <select id="laboral">
+            <option>Desempleado</option>
+            <option>En búsqueda laboral</option>
+            <option>Trabajo part time</option>
+            <option>Trabajo full time</option>
+        </select>
+    </form>
+    <h3>Gustos personales</h3>
+    <form>
+        <label for="gustos-musicales">Gustos musicales:</label>
+        <textarea></textarea><br><br>
+        <label for="comidas">Comida favoritas:</label>
+        <select id="comidas">
+            <option>Milanesas</option>
+            <option>Pizzas</option>
+            <option>Hamburguesas</option>
+            <option>Asado</option>
+        </select><br><br>
+        <input type="submit" value="Enviar datos"><br><br>
+        <input type="checkbox" id="checkbox">
+        <label for="checkbox">Recordar datos</label>
+
+
+    </form>
+</body>
+</html>
