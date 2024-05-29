@@ -52,4 +52,44 @@ function CalcularPorcentaje(){
     document.getElementById("resultado-porcentaje").innerHTML= "El postulante "+ nombre +" obtuvo un nivel: " + nivel
 }
 
-//4
+//4?
+
+//5
+
+function EjPrompt(){
+    let numero_prompt = Number(prompt("Ingrese un numero: "))
+    while(numero_prompt<=0){
+        numero_prompt = Number(prompt("Debe ingresar un numero positivo"))
+    }
+    let factorial =1
+    for(let i=numero_prompt;i>=1;i--){
+        factorial *= i;
+    }
+    alert ("El factorial del numero ingreado es: " + factorial)
+}
+
+//6
+var intentos=0
+function ValidarClave(){
+    let clave_usuario=document.getElementById("clave").value
+    let clave_original="palabra-clave"
+    let ingreso=false
+
+    if(clave_usuario == clave_original){
+        let mensaje_acceso=document.getElementById("resultado-validacion")
+        mensaje_acceso.innerHTML="Acceso concedido"
+        mensaje_acceso.style.color="green"
+
+        ingreso=true
+        intentos=0
+    }else{
+        let mensaje_negado=document.getElementById("resultado-validacion")
+        mensaje_negado.innerHTML="Clave incorrecta"
+        mensaje_negado.style.color="red"
+        intentos+=1
+    }
+    if(intentos>=3){
+        alert("Intruso, recargue la pagina para volver a intentar")
+    }
+    
+}
