@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Login</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="js/index.js" defer></script>
+</head>
+<body>
+    <main class="form-container">
+        <h1>
+            <!--<i id="icon-gender" class="fas fa-user-circle"></i>-->
+            <img src="img/gender/default.svg" alt="ícono del género seleccionado" id="img-gender">
+        </h1>
+        <form onsubmit="return false">
+            <div class="item-form">
+                <label for="gender">Género:</label>
+                <select name="gender" id="gender">
+                    <option value="" disabled selected>Seleccionar opción</option>
+                    <option value="FEMALE">Femenino</option>
+                    <option value="MALE">Masculino</option>
+                    <option value="OTHER">Prefiero no contestar</option>
+                </select>
+            </div>
+            <div class="item-form">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="test@test.com">
+            </div>
+            <div class="item-form">
+                <label for="password">Contraseña:</label>
+                <input type="password" name="password" id="password" placeholder="*******">
+            </div>
+            <div class="item-form item-form-buttons">
+                <button onclick="onClickBtnEntry()" class="btn-form-login">Ingresar</button>
+                <button onclick="onClickBtnShowPass()" class="btn-form-login" id="btn-show-password">Mostrar Contraseña</button>
+            </div>
+            <div id="result-messages">
+            </div>
+        </form>
+    </main>
+</body>
+</html>
