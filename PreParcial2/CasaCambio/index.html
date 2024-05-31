@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <title>Casa de Cambio</title>
+</head>
+<body>
+    <!--Se creará una aplicación que será usada por los operadores de una casa de
+    cambio. La aplicación permitirá a los usuarios el rápido cálculo de cotizaciones de cambio de
+    divisas.-->
+    <input type="number" id="cant-pesos" min="0" placeholder="Ingrese la cantidad de pesos">
+    <select id="selec-moneda">
+        <option value="" disabled selected>Seleccionar moneda</option>
+        <option value="DOLAR"id="dolar">Dolar</option>
+        <option value="EURO" id="euro">Euro</option>
+    </select>
+    <input type="button" id="boton-calcular" value="Calcular" onclick="Calcular()">
+    <p id="mostrar-resultado"></p>
+</body>
+</html>
