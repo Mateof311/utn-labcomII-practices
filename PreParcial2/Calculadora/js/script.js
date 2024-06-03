@@ -80,6 +80,7 @@ function init(){
         resolver();
     }
 }
+//Funciones extras
 function limpiar(){
     resultado.textContent = "";
 }
